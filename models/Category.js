@@ -8,15 +8,16 @@ Category.init(
   {
     // define columns
     id: {
-      unique: true,
+      allowNull: false,
       autoIncrement: true,
       type: DataTypes.INTEGER,
       primaryKey: true,
+
     },
 
     category_name: {
       type: DataTypes.CHAR,
-      unique: true,
+      allowNull: false,
       allowNull: false,
     },
   },
