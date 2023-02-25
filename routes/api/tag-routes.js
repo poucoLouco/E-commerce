@@ -7,18 +7,19 @@ const { Tag, Product, ProductTag } = require("../../models");
 router.get("/", (req, res) => {
   Tag.findAll({}).then((tags) => {
     console.log("get all tags", tags);
-    if (!categories) {
+    if (!tags) {
       res.status(400).send("no tags found");
       return;
     }
     res.status(200).json(tags);
   });
-  Tag.update({ tag_name: req.body.tag_name }, { where: { id: tag_id } })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).send("server error");
-    });
+  // Tag.update({ tag_name: req.body.tag_name }, { where: { id: tag_id } })
+  //   .catch((err) => {
+  //     console.log(err);
+  //     res.status(500).send("server error");
+  //   });
 });
+
 router.get("/:id", (req, res) => {
   const tag_id = req.params.id;
   // find a single tag by its `id`
