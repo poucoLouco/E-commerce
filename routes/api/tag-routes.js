@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
     });
 });
 router.get("/:id", (req, res) => {
-  const tagId = req.params.id;
+  const tag_id = req.params.id;
   // find a single tag by its `id`
   // be sure to include its associated Product data
   Tag.findOne(tag_id)
