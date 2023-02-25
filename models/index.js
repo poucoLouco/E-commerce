@@ -18,11 +18,11 @@ Product.belongsToMany(Tag, {
   foreignKey: 'product_id',
 });
 // Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(Product,{
+Tag.belongsToMany(Product, {
   through: ProductTag,
-  foreignKey: 'product_id',
-}
-)
+  foreignKey: 'tag_id',
+});
+
 module.exports = {
   Product,
   Category,
