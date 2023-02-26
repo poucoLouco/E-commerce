@@ -24,11 +24,13 @@ router.get("/:id", (req, res) => {
   const tag_id = req.params.id;
   // find a single tag by its `id`
   // be sure to include its associated Product data
-  Tag.findOne(tag_id)
+  Tag.findOne({
+    id: tag_id
+  })
     .then((tag) => {
       console.log("get tag", tag);
       if (!tag) {
-        res.status(404).send(`category with id ${category_id} not found`);
+        res.status(404).send(`category with id ${tag_id} not found`);
         return;
       }
 
@@ -54,8 +56,8 @@ router.post("/", (req, res) => {
 
 router.put("/:id", (req, res) => {
   Tag.update({ tag_name: req.body.category_name }, { where: { id: tag_id } })
-    .then((tag) => {
-      res.status(201).json(tag);
+    .then((tags) => {
+      res.status(201).json(tags);
     })
     .catch((err) => {
       console.log(err);
