@@ -1,6 +1,7 @@
 # E-commerce Back End Starter Code
 
-## Description
+## Description 📖
+
 
 The back end for an e-commerce site.With a working Express.js API and configured to use Sequelize to interact with a MySQL database.
 
@@ -36,4 +37,13 @@ https://watch.screencastify.com/v/pfAJaWJe4pI2X2ECPrL4
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 
+# Installation 💾
 
+
+npm init
+
+npm install mysql2
+
+npm install sequelize
+
+npm install dotenv
