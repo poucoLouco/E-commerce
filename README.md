@@ -40,9 +40,9 @@ THEN I am able to successfully create, update, and delete data in my database
 
 # Built With ⚙️
 
-[Node.js](https://nodejs.org/en/)
-[Sequelize](https://sequelize.org/)
-[Express.js](https://expressjs.com/)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
 # Usage
 
@@ -69,11 +69,19 @@ npm install dotenv
 
 # Author
 
-https://github.com/poucoLouco
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)][1]
 
-https://www.linkedin.com/in/roksolana-odynak-25728025a
+[1]: https://github.com/poucoLouco
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)][2]
+
+[2]:https://www.linkedin.com/in/roksolana-odynak-25728025a
+
+
+
+
 
 
 # License
 
-https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
