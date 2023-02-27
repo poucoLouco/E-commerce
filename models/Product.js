@@ -12,7 +12,6 @@ Product.init(
   {
     // define columns
     id: {
-      allowNull: false,
       autoIncrement: true,
       type: DataTypes.INTEGER,
       primaryKey: true,

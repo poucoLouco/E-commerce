@@ -7,7 +7,7 @@ The back end for an e-commerce site.With a working Express.js API and configured
 
 # Walkthrough Video 🎥 
 
-https://watch.screencastify.com/v/kvcSZivIV4PbSmpUo9GI
+
 
 # Acceptance Criteria 🔍
 
@@ -31,12 +31,13 @@ THEN my server is started and the Sequelize models are synced to the MySQL datab
 WHEN I open API GET routes in Insomnia Core for categories, products, or tags
 THEN the data for each of these routes is displayed in a formatted JSON
 
-https://watch.screencastify.com/v/pfAJaWJe4pI2X2ECPrL4
+https://watch.screencastify.com/v/2f2ZBW2PFQdkLsGVtoxk
 
 
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 
+https://watch.screencastify.com/v/vvWOtB6RvEtzCpZPdnty
 
 # Built With ⚙️
 
