@@ -5,8 +5,7 @@ const { Tag } = require("../../models");
 // find all tags
 // be sure to include its associated Product data
 router.get("/", (req, res) => {
-  Tag.findAll({attributes: ['id', 'tag_name']})
-  .then((tags) => {
+  Tag.findAll({ attributes: ["id", "tag_name"] }).then((tags) => {
     console.log("get all tags", tags);
     if (!tags) {
       res.status(400).send("no tags found");
@@ -26,7 +25,7 @@ router.get("/:id", (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
   Tag.findOne({
-    id: tag_id
+    where: { id: tag_id },
   })
     .then((tag) => {
       console.log("get tag", tag);
@@ -56,7 +55,10 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-  Tag.update({ tag_name: req.body}, { where: { id: tag_id } })
+  console.log("put tag with id", req.body, req.params);
+  const { id } = req.params;
+  const { tag_name } = req.body;
+  Tag.update({ tag_name }, { where: { id } })
     .then((tags) => {
       res.status(201).json(tags);
     })
