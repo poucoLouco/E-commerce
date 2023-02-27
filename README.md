@@ -7,7 +7,7 @@ The back end for an e-commerce site.With a working Express.js API and configured
 
 # Walkthrough Video 🎥 
 
-
+https://watch.screencastify.com/v/r3MpKIrxEWfRb08zjwqj
 
 # Acceptance Criteria 🔍
 
